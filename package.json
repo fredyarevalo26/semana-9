@@ -1,0 +1,29 @@
+{
+  "name": "prueba1",
+  "version": "1.0.0",
+  "description": "Esto es una prueba de gulp",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fredyarevalo26/semana-9.git"
+  },
+  "keywords": [
+    "Fredy",
+    "Arevalo"
+  ],
+  "author": "Fredy Arevalo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fredyarevalo26/semana-9/issues"
+  },
+  "homepage": "https://github.com/fredyarevalo26/semana-9#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}
