@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ejercicio 1</title>
+		<script src="js/jquery.js"></script>
+		<script type="text/javascript">
+			
+			jQuery(document).ready(function(){
+				jQuery("button#btn-mostrar").click(function(){
+					jQuery.ajax({
+						type: 'POST',
+						url: 'prueba.php',
+						data: {
+							'numero1': 10,
+							'numero2': 15,
+						},
+						/*beforeSend : function () {
+							$loader.addClass('post_loading_loader').html('');
+						}*/
+						success: function(result){
+							jQuery("#div-1").html(result);
+						}
+					});
+				});
+			});
+
+
+		</script>
+	</head>
+	<body>
+		<div id="div-1">
+			<h2>Texto Demo a cambiar</h2>
+		</div>
+
+		<button id="btn-mostrar">Obtener texto externo</button>
+		
+	</body>
+</html>
